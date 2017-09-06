@@ -1,3 +1,7 @@
+## Code from Kubernetes Webinar Series - A Closer Look at Pods and Replica Sets
+https://www.youtube.com/watch?v=CU-nNEY6Hfg&t=143s
+
+
 # Multi-Container Pods in Kubernetes
 Simple tutorial to demonstrate the concept of packaging multiple containers into a single pod. 
 * Web Pod has a Python Flask container and a Redis container

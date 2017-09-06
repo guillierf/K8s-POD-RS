@@ -17,8 +17,8 @@ Make sure that you have access to a Kubernetes cluster.
 ## Build a Docker image from existing Python source code and push it to Docker Hub. Replace DOCKER_HUB_USER with your Docker Hub username.
 ```
 cd Build
-docker build . -t <DOCKER_HUB_USER>/py-red-sql
-docker push <DOCKER_HUB_USER>/py-red-sql
+docker build . -t <DOCKER_HUB_USER>/py-red
+docker push <DOCKER_HUB_USER>/py-red
 ```
 
 ## Deploy the app to Kubernetes

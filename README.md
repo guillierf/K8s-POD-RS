@@ -4,6 +4,7 @@ https://www.youtube.com/watch?v=CU-nNEY6Hfg&t=143s
 ## Narrative for this demo
 1. BUILD: build image locally on your laptop: docker build -t . <DOCKER_HUB_USER>/py-red  (then push the image to registry)
 2. DEPLOY: run app locally on your laptop: docker-compose up -d 
+    Note: launch 'docker-compose up -d' multiple times if 'docker-compose ps' does not show all containers up and running
 3. DEPLOY: run app on K8s cluster: kubectl create -f
 
 

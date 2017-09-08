@@ -30,6 +30,17 @@ docker build . -t <DOCKER_HUB_USER>/py-red
 docker push <DOCKER_HUB_USER>/py-red
 ```
 
+## Deploy the app locally using docker-compose.
+```
+docker-compose up -d
+```
+
+## Test the app
+```
+curl localhost:5000/init
+```
+
+
 ## Deploy the app to Kubernetes
 ```
 cd ../Deploy

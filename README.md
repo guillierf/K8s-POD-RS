@@ -1,6 +1,15 @@
 ## Code from Kubernetes Webinar Series - A Closer Look at Pods and Replica Sets
 https://www.youtube.com/watch?v=CU-nNEY6Hfg&t=143s
 
+## Narrative for this demo
+1. BUILD: build image locally on your laptop: docker build -t . <DOCKER_HUB_USER>/py-red  (then push the image to registry)
+
+2. DEPLOY: run app locally on your laptop: docker-compose up -d 
+    
+    Note: launch 'docker-compose up -d' multiple times if 'docker-compose ps' does not show all containers up and running
+    
+3. DEPLOY: run app on K8s cluster: kubectl create -f
+
 
 # Multi-Container Pods in Kubernetes
 Simple tutorial to demonstrate the concept of packaging multiple containers into a single pod. 
@@ -17,8 +26,8 @@ Make sure that you have access to a Kubernetes cluster.
 ## Build a Docker image from existing Python source code and push it to Docker Hub. Replace DOCKER_HUB_USER with your Docker Hub username.
 ```
 cd Build
-docker build . -t <DOCKER_HUB_USER>/py-red-sql
-docker push <DOCKER_HUB_USER>/py-red-sql
+docker build . -t <DOCKER_HUB_USER>/py-red
+docker push <DOCKER_HUB_USER>/py-red
 ```
 
 ## Deploy the app to Kubernetes
